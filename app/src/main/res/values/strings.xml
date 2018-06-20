@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">HERMES </string>
+    <string name="title_section0">HERMES </string>
+    <string name="title_section1">HERMES</string>
+    <string name="title_section2">SETTINGS</string>
+    <string name="title_section3">FEEDBACK</string>
+
+    <string name="sendMessage">Send Your Alert Message</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="pref_title_primary_contact">Primary Contact</string>
+    <string name="pref_title_primary_contact_email">Primary Email</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="appwidget_text">HERMES</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="GPSAlertDialogTitle">GPS Alert</string>
+    <string name="GPSAlertDialogMessage">GPS Alert Message</string>
+    <string name="settings">GPS Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="security_on_off">Security On/Off</string>
+    <string name="send_sms">ABUSE ALERT</string>
+    <string name="share_with_whatsapp"> ANALYSIS</string>
+    <string name="your_feedback_is_so_precious_to_us_and_it_helps_us_to_improve_our_performance_better">Your feedback is so precious to us and it helps us to improve our performance better.</string>
+    <string name="submit_feedback">Submit Feedback</string>
+    <string name="title_activity_recorder_preview">RecorderPreview</string>
+    <string name="title_activity_custom_video_camera">CustomVideoCamera</string>
+</resources>

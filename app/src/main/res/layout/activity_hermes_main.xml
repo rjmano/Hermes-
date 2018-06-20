@@ -1,0 +1,76 @@
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/drawer_layout"
+    android:background="@drawable/back0"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".hermes_MainActivity">
+
+    <!-- As the main content view, the view below consumes the entire
+         space available using match_parent in both dimensions. -->
+    <RelativeLayout android:id="@+id/container" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_opaque">
+
+        <TextView
+            style="@style/sendMessageStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sendMessage"
+            android:textColor="#FFFFFF"
+            android:id="@+id/sendAlert"
+            android:onClick="sendMessage"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="85dp" />
+
+        <Switch
+            android:id="@+id/security_on_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="99dp"
+            android:checked="false"
+            android:text="@string/security_on_off"
+            android:visibility="visible" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_sms"
+            android:id="@+id/sendSMS"
+            android:onClick="sendMessage"
+            android:textColor="#FFFFFF"
+            android:background="@color/accent_material_dark"
+            android:layout_below="@+id/sendAlert"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="63dp"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/share_with_whatsapp"
+            android:id="@+id/WhatsAppButton"
+
+            android:textColor="#FFFFFF"
+            android:background="@color/accent_material_dark"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            tools:ignore="RtlHardcoded" />
+
+
+    </RelativeLayout>
+
+
+    <fragment android:id="@+id/navigation_drawer"
+        android:layout_width="@dimen/navigation_drawer_width" android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:name="com.SCAD.HERMES.NavigationDrawerFragment"
+        tools:layout="@layout/fragment_navigation_drawer" />
+
+</android.support.v4.widget.DrawerLayout>
